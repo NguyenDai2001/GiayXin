@@ -1,0 +1,102 @@
+@import '../color.scss';
+$main_text_font:Serif;
+
+
+
+//component NavBar
+.NavBar_container{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right , #02fd4d, #0059ff);
+
+    .NavBar_child{
+        background-color: $main_color_header;
+        width: auto;
+        display: flex;
+        .NavBar_logo{
+            margin-right: 20px;
+
+            img{
+                width: 100px;
+            }
+        }
+        // component Lookup
+        .Navbar_lookup{
+            margin: auto 20px;
+            
+            .input_lookup{
+                width: 240px;
+                height: 30px;
+                border-radius: 20px;
+                border: 1px solid rgb(40, 255, 201);
+                padding-left: 20px;
+            }
+            .input_lookup:focus{
+                background-color: #f2fbfa;
+            }
+            button{
+                position: absolute;
+                
+                height: 30px;
+                width: 35px;
+                margin: 2px -40px ;
+                border: none;
+                background-color: rgba(130, 189, 181, 0)
+            }
+            
+        }
+        // menu
+        .NavBar_Select
+        {
+
+            margin: auto;
+            background-color: $main_color_header;
+            ul li{
+                list-style: none;
+                display: inline; 
+                margin: 0 2px;
+                
+            }
+            .Select_item{
+                text-decoration:none;
+                font-weight: bold;
+                padding: 15px 20px;
+                color: white;
+                border-radius: 40px 5px;
+                font-family: $main_text_font;
+                background: linear-gradient(45deg, rgba(29, 125, 6, 0.18820028011204482) 0%, rgba(29, 125, 6, 0.38707983193277307) 20%, rgba(130, 189, 181, 0.9024859943977591) 50%, rgba(3, 103, 152, 0.40388655462184875) 83%, rgba(3, 103, 152, 0.2050070028011205) 100%);
+                transition: 0.5s linear ;
+            }
+            .Select_item:hover{
+                
+                border-radius: 5px 40px;
+                background: linear-gradient(232deg, rgba(29, 125, 6, 0.3310574229691877) 0%, rgba(29, 125, 6, 0.8016456582633054) 20%, rgba(130, 189, 181, 0.9837184873949579) 50%, rgba(3, 103, 152, 0.7960434173669468) 83%, rgba(3, 103, 152, 0.29744397759103647) 100%);
+            }
+            
+            .Select_item:active{
+                    
+                        width: 90px;
+                            text-decoration: none;
+                        
+                            background-color: black;
+                            color: rgb(81, 255, 0);
+                    
+                    
+                    
+
+            }
+            
+        }
+        // cart
+        .NavBar_cart{
+            margin: auto 20px;
+            .icon_cart{
+                font-size: 25px;
+                color: #96e9e6;
+            }
+        }
+
+    }
+}

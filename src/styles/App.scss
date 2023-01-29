@@ -1,0 +1,16 @@
+@import './color.scss';
+
+.App {
+    text-align: center;
+}
+
+.App-header {
+    background-color: $main_color_header;
+    min-height: 7vh;
+               
+    flex-direction: column;
+    
+   
+    
+    color: white;
+}
